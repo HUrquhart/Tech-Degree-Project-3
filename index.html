@@ -1,0 +1,95 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- make sure to download this for a production environment -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="style/main.css">
+
+    <title>The Code Review</title>
+  </head>
+  <body>
+    <header>
+      <div class="wrapper">
+        <h1>THE CODE REVIEW</h1>
+      </div>
+    </header>
+    <main>
+      <div class="wrapper">
+        <h2>Signup for our newsletter</h2>
+        <p>Get the latest news on how your codeis doing right in your inbox</p>
+        <div class="section-divider"></div>
+        <form action="#" method="POST">
+          <fieldset>
+            <legend>Contact Information</legend>
+            <label for="full_name">Full name</label>
+            <input type="text" name="full_name" id="full_name" placeholder="Required" required>
+            <label for="email_address">Email Address</label>
+            <input type="email" name="email_address" id="email_address" placeholder="Required" required>
+            <label for="phone_number">Phone Number</label>
+            <input type="tel" name="phone_number" id="phone_number" placeholder="Optional">
+            <label for="street_address">Street Address</label>
+            <input type="text" name="street_address" id="street_address" placeholder="Optional">
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" placeholder="Optional">
+            <label for="state">State / Territory</label>
+            <select name="state" id="state">
+              <option class="select-placeholder" value="" disabled selected>Select state or territory</option>
+              <optgroup label="State">
+                <option value="state_nsw">New South Wales</option>
+                <option value="state_qld">Queensland</option>
+                <option value="state_vic">Victoria</option>
+                <option value="state_wa">Western Austrlia</option>
+                <option value="state_tas">Tasmania</option>
+                <option value="state_sa">South Australia</option>
+              </optgroup>
+              <optgroup label="Territory">
+                <option value="state_act">Australian Capital Territory</option>
+                <option value="state_nt">Northern Territory</option>
+              </optgroup>
+            </select>
+            <label for="post_code">Post Code</label>
+            <input type="text" name="post_code" id="post_code" placeholder="Optional">
+          </fieldset>
+          <hr>
+          <fieldset class="newsletter-options">
+            <legend>Newsletter</legend>
+
+            <label>Select the newsletters you would like to recieve</label>
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="html_news" id="html_news"> <label class="right_side_label" for="html_news">HTML News</label>
+            </div> 
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="css_news" id="css_news"> <label class="right_side_label" for="css_news">css News</label>
+            </div>
+            <div class="checkbox-wrapper">
+              <input type="checkbox" name="js_news" id="js_news"> <label class="right_side_label" for="js_news">Javascript News</label>
+            </div>
+
+            <br>
+
+            <label>Newsletter format</label>
+            <div class="radio-warpper">
+              <input type="radio" name="newsletter_format" id="newsletter_format_plain_text" value="format_plain_text"><label class="right_side_label" for="newsletter_format_plain_text">Plain text</label>
+            </div>
+            <div class="radio-warpper">
+              <input type="radio" name="newsletter_format" id="newsletter_format_html" value="format_html" checked><label class="right_side_label" for="newsletter_format_html">HTML</label>
+            </div>
+            
+            <br>
+
+            <label for="other_topics">Other topics you'd like to hear about</label>
+            <textarea name="other_topics" id="other_topics" rows="10" placeholder="enter a list of topics separated by commas"></textarea>
+          </fieldset>
+          <button type="submit">Sign up</button>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p><small><em>Copyright The Code Review</em></small></p>
+    </footer>
+  </body>
+  </html>
